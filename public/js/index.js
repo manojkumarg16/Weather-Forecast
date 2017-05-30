@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var fc = "F", lat, lon;
   $('#main').hide();
-  $('#threeDay').hide();
+  $('#fourDays').hide();
     
   function printDate() {
     var d = new Date();
@@ -103,7 +103,7 @@ $(document).ready(function(){
   
   function getNewLocation(city, region, country){
     $('#main').show();
-    $('#threeDay').show();
+    $('#fourDays').show();
     $('#location').empty();
     $('#location').append('<h1>' + city + ', ' + region + ', ' + country + '</h1>');
   }
